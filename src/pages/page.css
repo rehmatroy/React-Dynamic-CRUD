@@ -1,0 +1,203 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .addItemSection {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .addItemSection h2 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .inputGroup {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .inputGroup input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .addButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .addButton:hover {
+    background-color: #45a049;
+  }
+  
+  .tableContainer {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .actionButtons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .editButton,
+  .deleteButton {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+  }
+  
+  .editButton {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .editButton:hover {
+    background-color: #0b7dda;
+  }
+  
+  .deleteButton {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .deleteButton:hover {
+    background-color: #da190b;
+  }
+  
+  .modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+  }
+  
+  .modalContent h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .modalContent input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .modalActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .updateButton,
+  .cancelButton {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+  }
+  
+  .updateButton {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .updateButton:hover {
+    background-color: #45a049;
+  }
+  
+  .cancelButton {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .cancelButton:hover {
+    background-color: #da190b;
+  }
+  
+  @media (max-width: 600px) {
+    .inputGroup {
+      flex-direction: column;
+    }
+  
+    .table th,
+    .table td {
+      padding: 8px;
+    }
+  
+    .actionButtons {
+      flex-direction: column;
+    }
+  }
+  
+  
